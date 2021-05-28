@@ -18,6 +18,11 @@ intents:
   - askname
   - help
 
+forms:
+  painting_form:
+    required_slots:
+      
+
 responses:
   utter_greet:
   - text: "Hey! How are you?"
