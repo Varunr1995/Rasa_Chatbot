@@ -10,4 +10,9 @@ rules:
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge
-  - action: utter_iamabot
+  - action: utter_name
+
+- rule: Say 'I can guide you customise your painting' anytime the user says how_can_you_help_me
+  steps:
+  - intent: help
+  - action: utter_bot_help

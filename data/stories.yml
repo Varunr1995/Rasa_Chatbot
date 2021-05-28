@@ -28,3 +28,20 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: default
+  steps:
+  - intent: fallback
+  - action: utter_default
+
+- story: introduction
+  steps:
+  - intent: bot_challange
+  - action: utter_name
+  - intent: askname
+  - action: utter_name
+
+- story: bot responses
+  steps:
+  - intent: help
+  - action: utter_bot_help

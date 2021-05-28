@@ -7,9 +7,6 @@ nlu:
     - hello
     - hi
     - hello there
-    - good morning
-    - good evening
-    - moin
     - hey there
     - let's go
     - hey dude
@@ -17,6 +14,79 @@ nlu:
     - good evening
     - good afternoon
     - good day
+    - Hey there
+    - Hola
+    - Bonjour
+    - How have you been?
+    - Hope you are doing well
+    - Hey,can you help me out?
+    - Are you there?
+    - Hello, have a nice day
+    - Happy morning
+    - Happy evening
+    - Have a good day
+    - Pleasure to talk to you
+    - Hello dear
+    - Hey, please help
+    - What's up
+    - Any latest update?
+    - Yo
+    - Yo man whats up
+    - Hi,how do you do
+    - Hello,how are you
+    - Hi,how are you
+    - Hello,what can you do for me
+    - Hi,what can you do for me
+    - Hello,what can you do
+    - Hi,what can you do
+    - Hey,what can you do
+    - Hey,what can you do for me
+    - Hey,how are you
+    - Hey,how do you do
+    - Hi,how are you doing
+    - Hey,how are you doing
+    - Hello,how are you doing
+    - What's new
+    - What have you been upto
+    - What's the good word
+    - How have you been
+    - Hey,what's up
+    - Hello,how do you do
+    - Hey dude,what's going on
+    - How are you bro
+    - Hey bro,what's up
+    - Hey bot
+    - Hello bot
+    - Hey bot,how can you help me
+    - Hey bot,what can you do
+    - Hello bot,how can you help me
+    - Hello bot,what can you do
+    - What's your nice name
+    - Hi there
+    - Hi can you help me
+    - Hi can you suggest me
+    - Hey/hi i needed help
+    - Hey/hi i need job
+    - Namaskar
+    - Hello there?
+    - Hello what's doing
+    - What's up?
+    - Hey bot
+    - Hello bot
+    - Hey bot,how can you help me
+    - Hey bot,what can you do
+    - Hello bot,how can you help me
+    - Hello bot,what can you do
+    - What's your nice name
+    - Hi there
+    - Hi can you help me
+    - Hi can you suggest me
+    - Hey/hi i needed help  
+    - Hey/hi i need job  
+    - Hey! I need some help you there?  
+    - Hi! How can you help me?  
+    - Hey! Help
+
 
 - intent: goodbye
   examples: |
@@ -40,8 +110,46 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - Good work
+    - Nice
+    - Good,keep it up
+    - Awes
+    - Top notch
+    - Wow amazing
+    - Exciting
+    - Done
+    - Very good
+    - Good going
+    - You can do it
+    - You can proceed
+    - You can proceed further
+    - Good
+    - Approved
+    - Permitted
+    - Totally fine
+    - Yes, you are right
+    - Perfectly alright
+    - I loved it
+    - Nice, i liked it
+    - Yes,thak you
+    - Yeah,thank you
+    - I am okay with it
+    - Please proceed
+    - I am interested in it
+    - Approve
+    - Nice, i liked it
+    - Welcome
+    - Yeah,sure
+    - Yes,go on
+    - Yes,sure
+    - I am good with this go on
+    - Thums up
+    - Good go on
+    - Exactly
+    - I appreciate it
 
-- intent: deny
+
+- intent: reject
   examples: |
     - no
     - n
@@ -50,6 +158,31 @@ nlu:
     - don't like that
     - no way
     - not really
+    - None
+    - I cant accept
+    - I dont like
+    - I am not okay with this
+    - Suggest something else
+    - Not okay with this
+    - Would like something better
+    - Not this one
+    - Stop
+    - Deny
+    - Thumbs down
+    - Eliminate
+    - I wont
+    - Disagreed
+    - I didn't like it
+    - Nooo
+    - Sorry, i didnt like it
+    - Better one
+    - I am sorry
+    - It's impossible
+    - I don't think that is a good option
+    - I think it will not work for us.
+    - No chance
+    - Other options please
+    - I don't want this
 
 - intent: mood_great
   examples: |
@@ -91,3 +224,19 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: askname
+  example: |
+    - What is your name?
+    - May I know your name?
+    - What do people call you?
+    - Do you have a name for yourself?
+
+- intent: help
+  example: |
+    - How can you help me?
+    - What do you do?
+    - How will you help me?
+    - What makes you useful?
+    - Why are you here?
+    
