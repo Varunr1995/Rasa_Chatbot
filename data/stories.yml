@@ -46,3 +46,10 @@ stories:
   - intent: help
   - action: utter_bot_help
 
+- story: quere_form
+  steps:
+  - intent: painting_quere
+  - action: Action_Painting_Form
+  - action: form{"name": "Action_Painting_Form"} # The name of the form mention in actions.py
+  - action: form{"name": "null"} # Once the data provided by the user is complete we need to close the form (deactivate the form).
+  - action: utter_slot_values
