@@ -34,6 +34,11 @@ stories:
   - intent: fallback
   - action: utter_default
 
+- story: confirmation
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
 - story: introduction
   steps:
   - intent: bot_challange
