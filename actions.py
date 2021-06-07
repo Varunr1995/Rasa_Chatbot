@@ -4,9 +4,9 @@ from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.forms import FormValidationAction, FormAction
 
-class Action_Painting_Form(Action):
+class Action_Painting_Form(FormValidationAction):
     def name(self) -> Text:
-        return "Action_Painting_Form"
+        return "validate_painting_form"
 
     @staticmethod
     def required_slots(tracker: Tracker) -> List[Text]:

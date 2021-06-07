@@ -11,10 +11,10 @@ intents:
   - askname
   - help
   - painting_quere:
-      use_entities: []  
+      use_entities: []
 
-forms:
-  Action_Painting_Form
+actions:
+  - validate_painting_form # From actions.py page
 
 entities:
 - name
@@ -53,7 +53,34 @@ slots:
     type: text
     influence_conversation: false
 
-  
+forms:
+  painting_quere_form:
+    required_slots:
+      name:
+        type: text
+        influence_conversation: false
+        auto_fill: false
+      entity_2:
+        type: text
+        influence_conversation: false
+        auto_fill: false
+      entity_3:
+        type: text
+        influence_conversation: false
+        auto_fill: false
+      entity_4:
+        type: text
+        influence_conversation: false
+        auto_fill: false
+      entity_5:
+        type: text
+        influence_conversation: false
+        auto_fill: false
+      entity_6:
+        type: text
+        influence_conversation: false
+        auto_fill: false
+
 responses:
   utter_greet:
   - text: "Hey! Welcome to My Website, how can I help you?  "
@@ -80,7 +107,7 @@ responses:
   utter_submit:
   - text: "All done!"
 
-  utter_slot_values:
+  utter_slots_values:
   - text: "I'm gonna consider the below requirements for custom canvas painting. \n
           - name: {name}\n
           - entity_2: {entity_2}\n
